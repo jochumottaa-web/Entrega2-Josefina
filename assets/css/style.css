@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Darker+Grotesque:wght@300..900&family=Notable&display=swap');
+
+
+
+/* Estilo general */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f1e8
+}
+
+main {
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    padding: 100px 0px 80px;
+}
+
+footer {
+    background-color: #f4f1e8;
+    color: gray;
+    text-align: center;
+    padding: 10px;
+    font-family: sans-serif;
+    font-size: 14px;
+    border-top: 1px solid #ccc;
+    margin: 0;
+}
+
+/* Estilo de enlaces */
+a {
+    text-decoration: none;
+    color: #0e1f94;
+    font-family: sans-serif;
+    font-size: 14px;
+    display: block;
+    margin-top: 0px;
+}
+
+/* Estilo de grillas */
+
+.container.mt-1 {
+    margin-bottom: 20px;
+}
+
+.col-sm-12.col-lg-7 h1 {
+    font-size: 6vw;
+    color: white;
+    font-family: "Notable", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0 0 5px 0;
+    text-align: center;
+}
+
+.col-sm-12.col-lg-7 h2 {
+    margin-bottom: 3rem;
+    font-size: 2.5vw;
+    font-family: "Ballet", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: white;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+.col-sm-12.col-lg-7 p {
+    font-size: 1rem;
+    line-height: 2.4;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.col-sm-12.col-lg-4 img {
+    width: 100%;
+    max-width: 380px;
+    height: auto;
+    align-items: center;
+}
+
+
+.col-sm-12.col-lg-5 h1 {
+    font-size: 6vw;
+    color: white;
+    font-family: "Notable", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0 0 5px 0;
+    text-align: center;
+}
+
+.col-sm-12.col-lg-5 p {
+    font-size: 1rem;
+    line-height: 2.4;
+    margin-bottom: 60px;
+    text-align: center;
+    padding: 10px;
+}
+
+.col-sm-12.col-lg-5 .video {
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+/* Estilo de grillas que ocupan las 12 columnas */
+
+.col-12 h1 {
+    font-size: 5vw;
+    color: white;
+    font-family: "Notable", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0 0 5px 0;
+}
+
+.col-12 h2 {
+    font-size: 1rem;
+    color: #f4f1e8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/* Componentes */
+
+/* Formularios */
+
+.formulario {
+    margin: 40px 0 60px;
+    max-width: 700px;
+}
+
+.col-sm-12.col-lg-7 .formulario h2 {
+    font-size: 2rem;
+}
+
+.form-content {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    background-color: #0f0f0f;
+    border: 1px solid #232323;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.form-content .celda {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    color: #cfcfcf;
+    font-size: 14px;
+}
+
+.form-content .celda-grande {
+    grid-column: 1 / 3;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: #cfcfcf;
+    font-size: 14px;
+}
+
+.formulario label {
+    font-size: 14px;
+}
+
+.formulario input .formulario textarea {
+    background-color: #101010;
+    border-radius: 8px;
+    padding: 10px 12px;
+    border: 1px solid #444;
+    outline: none;
+    color: white;
+    font-family: sans-serif;
+}
+
+.formulario textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Botón */
+
+.formulario button {
+    align-self: flex-end; 
+    padding: 8px 20px;
+    border-radius: 6px;
+    border: none;
+    background-color: #eb8b56;
+    color: #111;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.formulario button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(248, 236, 219, 0.4);
+}
+
+
+/* Barra de navegación */
+.navbar {
+    background-color: #f4f1e8;
+    padding: 5px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+#navbarNavAltMarkup .nav-link {
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+#navbarNavAltMarkup .nav-link:hover {
+    color: #d68941;
+    transform: translateY(-1px);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.032);
+}
+
+#navbarNavAltMarkup .nav-link:active {
+    color: #edc286;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.032);
+}
+
+
+
+/* Lista con flexbox - manifiesto*/
+
+.conceptos ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    gap: 24px;
+    list-style: none;
+}
+
+.conceptos .cajas p {
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    margin: 0 12px;
+    background-color: #db6526b1;
+    border-radius: 10px;
+    padding: 8px;
+    color: white;
+    box-shadow: 0 0 12px rgba(255, 165, 80, 0.6), 0 0 30px rgba(255, 130, 40, 0.4);
+}
+
+.conceptos .cajas h2 {
+    color: white;
+    margin: 0;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-size: 1.5rem;
+    text-shadow: 0 0 12px rgba(255, 165, 80, 0.6), 0 0 30px rgba(255, 130, 40, 0.4);
+}
+
+.conceptos .cajas p:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 18px rgba(255, 180, 100, 0.8), 0 0 50px rgba(255, 150, 70, 0.6);
+    
+}
+
+
+/* Galería de imágenes */
+
+.imagenes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 12px;
+    padding: 40px;
+}
+
+.imagenes img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 6px;
+}
+
+.imagenes img:hover {
+    transform: scale(1.05);
+}
+
+/* box de ejemplos */
+.ejemplos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin: 24px 0 40px;
+}
+
+article {
+    background-color: #fff;
+    padding: 16px 18px;
+    border-radius: 10px;
+    border: 1px solid #e7e2da;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    color: #111;
+    flex: 1 1 calc(33% - 16px);
+    min-width: 250px;
+}
+
+article h2 {
+    margin: 0;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+}
+
+article p {
+    margin: 0;
+    line-height: 1.5;
+    color: #333;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* box de ejercicios */
+
+.bloques {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin: 40px auto;
+    max-width: 1400px;
+    padding: 0 40px;
+}
+
+.ejercicios {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #fff;
+    padding: 16px 18px;
+    border-radius: 10px;
+    border: 1px solid #e7e2da;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    color: #111;
+    flex: 1 1 calc(45% - 32px);
+    min-width: 250px;
+}
+
+.ejercicios .texto {
+    width: 100%;
+}
+
+.ejercicios h2 {
+    margin: 0px;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-optical-sizing: auto;
+    font-style: italic;
+    color: black;
+    text-align: center;
+    line-height: 1.2;
+    font-weight: 400;
+}
+
+.ejercicios p {
+    margin: 15px;
+    line-height: 1.6;
+    color: black;
+    font-family: sans-serif;
+    font-size: 15px;
+    text-align: left;
+}
+
+.ejercicios .disclaimer {
+    font-size: 15px;
+    color: gray;
+    margin-top: 0;
+    font-family: sans-serif;
+}
+
+.ejercicios .decorative {
+    width: 70%;
+    text-align: center;
+    margin: 0;
+}
+
+.ejercicios ol {
+    text-align: left;
+}
+
+
+/* media queries */
+
+@media (max-width: 768px) {
+    .col-sm-12.col-lg-8 h2 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .col-sm-12.col-lg-8 p  {
+        font-size: 0.7rem;
+        line-height: 1.35;
+    }
+}
+
+@media (max-width: 768px) {
+    .col-sm-12.col-lg-4 img {
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 576px) {
+    .imagenes {
+        grid-template-columns: 1fr;
+    }
+}
